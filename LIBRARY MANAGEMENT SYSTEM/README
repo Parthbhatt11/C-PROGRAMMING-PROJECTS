@@ -1,0 +1,56 @@
+# Library Management System in C
+
+A console-based library management system built using the C programming language. This project is a practical application of fundamental C concepts, including **data structures**, **file handling**, and **menu-driven program flow**. It allows a user to manage a collection of books by performing basic operations like adding, viewing, searching, and managing the availability of books.
+
+---
+
+## Features
+
+This system provides the following functionalities to manage a library's book inventory:
+
+-   **Add Book:** Add a new book to the library with details like a unique ID, title, author, and quantity.
+-   **View All Books:** Display a list of all books currently in the library, including their quantity and availability.
+-   **Search Book:** Find a specific book by its unique ID and view its details.
+-   **Issue Book:** Mark a book as issued, which decreases its available quantity.
+-   **Return Book:** Mark a book as returned, which increases its available quantity.
+-   **Delete Book:** Permanently remove a book from the library's database.
+
+---
+
+## How to Run
+
+### Prerequisites
+
+-   A C compiler (e.g., GCC)
+
+### Compilation
+
+1.  Save the code as `library_management.c`.
+2.  Open your terminal or command prompt.
+3.  Navigate to the directory where you saved the file.
+4.  Compile the program using the following command:
+
+    ```bash
+    gcc library_management.c -o library_management
+    ```
+
+### Execution
+
+After successful compilation, run the executable from your terminal:
+
+```bash
+./library_management
+
+Technical Details
+Data Storage: The book records are stored in a binary file named books.dat. Using a binary file is an efficient way to store and retrieve structured data.
+
+struct Book: A struct named Book is used to define the structure of a book record, organizing related data fields like id, title, author, quantity, and available.
+
+File Handling: The program uses standard C file I/O functions like fopen(), fread(), fwrite(), fseek(), remove(), and rename() to read from, write to, and modify the books.dat file.
+
+Menu-Driven Interface: The main function uses a while loop and a switch-case statement to create a simple, interactive menu for the user.
+
+Input Handling: The code uses getchar() and fgets() to handle string input, which helps prevent issues with trailing newline characters left by scanf().
+
+Contributing
+This project is a great starting point for learning C. Feel free to fork the repository and contribute. You can improve existing features, add new ones (e.g., user management, due dates), or fix bugs. For any major changes, please open an issue first to discuss your ideas.
