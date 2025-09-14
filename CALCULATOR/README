@@ -1,0 +1,59 @@
+# Scientific Calculator in C
+
+A simple, console-based scientific calculator built with the C programming language. This project provides a wide range of mathematical functions and serves as a great example of implementing a menu-driven application in C, utilizing the `math.h` library.
+
+---
+
+## Features
+
+This calculator includes a comprehensive set of functions, from basic arithmetic to advanced scientific calculations:
+
+-   **Basic Arithmetic:** Addition, Subtraction, Multiplication, Division, and Modulus.
+-   **Trigonometric Functions:** `sin()`, `cos()`, `tan()` and their reciprocals (`cosec()`, `sec()`, `cot()`) for angles in degrees.
+-   **Inverse Trigonometric Functions:** `asin()`, `acos()`, `atan()` to find the angle from a given value, with results in degrees.
+-   **Powers and Roots:** Square, Cube, Square Root, Cube Root, and Power (`x^y`).
+-   **Logarithmic Functions:** `log10()` (common logarithm) and `ln()` (natural logarithm).
+-   **Conversions:** Convert angles between Degrees and Radians.
+-   **Factorial:** Calculate the factorial of a non-negative integer.
+-   **Percentage:** Calculate `x` percent of `y`.
+
+---
+
+## How to Run
+
+### Prerequisites
+
+-   A C compiler (e.g., GCC)
+
+### Compilation
+
+1.  Save the code as `calculator.c`.
+2.  Open your terminal or command prompt.
+3.  Navigate to the directory where you saved the file.
+4.  Compile the program. Since this project uses functions from the `math.h` library, you need to link the math library using the `-lm` flag:
+
+    ```bash
+    gcc calculator.c -o calculator -lm
+    ```
+
+### Execution
+
+After successful compilation, run the executable from your terminal:
+
+```bash
+./calculator
+
+
+Technical Details
+Standard Libraries: The project uses <stdio.h> for input/output, <stdlib.h> for utility functions, and <math.h> for most of the mathematical operations.
+
+Functions: A custom factorial() function is implemented to handle integer factorials.
+
+Macros: The code uses simple macros (RAD_TO_DEG and DEG_TO_RAD) to simplify angle conversions.
+
+Menu-Driven Interface: A do-while loop and a switch-case statement are used to create an interactive menu, allowing the user to perform multiple calculations without restarting the program.
+
+Error Handling: Basic error handling is included to prevent division by zero, invalid input for square roots, and logarithms of non-positive numbers.
+
+Contributing
+Feel free to fork the repository and contribute. You can add new features, improve existing ones, or fix bugs. If you have an idea for a major change, please open an issue first to discuss it.
