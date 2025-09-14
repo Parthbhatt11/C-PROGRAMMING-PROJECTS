@@ -1,0 +1,68 @@
+# Periodic Table Explorer in C
+
+A command-line tool built with C that provides basic information about the first 118 elements of the periodic table. This project serves as a simple database application, demonstrating the use of `switch-case` statements to retrieve and display specific data based on user input.
+
+---
+
+## Features
+
+This program allows you to:
+
+-   **Explore Elements:** Look up an element by its atomic number to get key information.
+-   **View Element Details:** For a given atomic number, the program displays the following information:
+    -   Element Name
+    -   Symbol
+    -   Atomic Weight
+    -   Category (e.g., Noble Gas, Alkali Metal)
+    -   Founder/Discoverer
+    -   A fun fact about the element
+
+---
+
+## How to Run
+
+### Prerequisites
+
+-   A C compiler (e.g., GCC)
+
+### Compilation
+
+1.  Save the code as `periodic_table.c`.
+2.  Open your terminal or command prompt.
+3.  Navigate to the directory where you saved the file.
+4.  Compile the program using the following command:
+
+    ```bash
+    gcc periodic_table.c -o periodic_table
+    ```
+
+### Execution
+
+After successful compilation, run the executable from your terminal:
+
+```bash
+./periodic_table
+
+Technical Details
+Data Structure: The program uses a large switch-case block to store and retrieve data for each element. This approach is straightforward for a fixed set of data points.
+
+User Interface: The interface is purely command-line driven, using printf() for output and scanf() for input, providing a simple and direct user experience.
+
+Program Flow: A while(1) loop ensures the program continues to run and allows users to look up multiple elements until they choose to exit.
+
+Limitations
+Hardcoded Data: All element data is hardcoded directly into the source file. For a larger or more dynamic application, it would be better to store this data in a separate file or a more flexible data structure.
+
+Basic Functionality: The program's sole function is to display pre-defined information. It does not perform calculations or allow for adding/modifying element data.
+
+Contributing
+
+This project can be a great starting point for beginners in C. Feel free to fork the repository and expand its functionality. Some ideas for improvement include:
+
+Storing element data in a file (.csv or binary) for easier management.
+
+Adding more information for each element (e.g., melting point, boiling point).
+
+Allowing users to search by element name or symbol.
+
+Adding interactive quizzes or games related to the periodic table.
