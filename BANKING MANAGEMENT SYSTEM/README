@@ -1,0 +1,59 @@
+# Bank Management System in C
+
+A simple, console-based banking management system built with the C programming language. This project demonstrates fundamental concepts of C programming, including file handling for data persistence, struct definitions, and function-based program flow.
+
+---
+
+## Features
+
+This system provides a range of basic banking functionalities:
+
+-   **Create Account:** Allows new users to create an account with a unique account number, name, address, Aadhar, and PAN details.
+-   **Display Account Info:** View details of a specific account or all accounts in the system.
+-   **Deposit Money:** Add funds to an existing account.
+-   **Withdraw Money:** Withdraw money from an account, with a check for sufficient balance.
+-   **Transfer Money:** Transfer funds from one account to another securely.
+-   **Update Account Details:** Modify account information such as name, address, and PIN.
+-   **Delete Account:** Permanently remove an account from the system.
+-   **View Transaction History:** See a detailed log of all deposits, withdrawals, and transfers for a specific account.
+-   **Change PIN:** Update the account's personal identification number for security.
+
+---
+
+## How to Run
+
+### Prerequisites
+
+-   A C compiler (e.g., GCC)
+
+### Compilation
+
+1.  Save the code as `bank_management.c`.
+2.  Open your terminal or command prompt.
+3.  Navigate to the directory where you saved the file.
+4.  Compile the program using the following command:
+
+    ```bash
+    gcc bank_management.c -o bank_management
+    ```
+
+### Execution
+
+After successful compilation, run the executable from your terminal:
+
+```bash
+./bank_management
+
+Technical Details
+Data Storage: Account information is stored in a binary file named accounts.dat.
+
+Struct: The struct account is used to organize customer data, including personal details, account balance, and transaction history.
+
+File Handling: The program uses standard C library functions like fopen(), fread(), fwrite(), fseek(), fclose(), remove(), and rename() to manage the persistent storage of account data.
+
+Security: A simple PIN verification system is implemented to secure transactions and account modifications.
+
+Transaction Log: A transaction history is maintained for each account within the struct, providing a record of all financial activities.
+
+Contributing
+Feel free to fork the repository and contribute. You can improve existing features, add new ones, or fix bugs. For major changes, please open an issue first to discuss what you would like to change.
